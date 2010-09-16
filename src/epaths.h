@@ -26,7 +26,7 @@ along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.  */
    path is usually identical to PATH_LOADSEARCH except that the entry
    for the directory containing the installed lisp files has been
    replaced with ../lisp.  */
-#define PATH_DUMPLOADSEARCH "/home/ubuntu/install_emacs/emacs-23.2/lisp"
+#define PATH_DUMPLOADSEARCH "/home/debian/local/github/emacs/lisp"
 
 /* The extra search path for programs to invoke.  This is appended to
    whatever the PATH environment variable says to set the Lisp

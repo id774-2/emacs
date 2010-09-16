@@ -32,7 +32,7 @@ version=23.2
 prefix=/opt/emacs/23.2
 datarootdir=${prefix}/share
 datadir=${datarootdir}
-srcdir=/home/ubuntu/install_emacs/emacs-23.2/leim
+srcdir=/home/debian/local/github/emacs/leim
 ns_appresdir=
 
 # Where to install LEIM files.

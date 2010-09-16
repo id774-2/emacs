@@ -19458,10 +19458,7 @@ direction of search to backward if set non-nil.
 
 See also `dabbrev-abbrev-char-regexp' and \[dabbrev-completion].
 
-(fn ARG)Fdata-debug-new-buffer
-Create a new data-debug buffer with NAME.
-
-(fn NAME)Fdbus-handle-event
+(fn ARG)Fdbus-handle-event
 Handle events from the D-Bus.
 EVENT is a D-Bus event, see `dbus-check-event'.  HANDLER, being
 part of the event, is called with arguments ARGS.
@@ -20832,20 +20829,7 @@ With prefix arg NOCONFIRM, execute current line as-is without editing.
 (fn &optional NOCONFIRM)Fecomplete-setup
 Not documented
 
-(fn)Vglobal-ede-mode
-Non-nil if Global-Ede mode is enabled.
-See the command `global-ede-mode' for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `global-ede-mode'.Fglobal-ede-mode
-Toggle global EDE (Emacs Development Environment) mode.
-With non-nil argument ARG, enable global EDE mode if ARG is
-positive; otherwise, disable it.
-
-This global minor mode enables `ede-minor-mode' in all buffers in
-an EDE controlled project.
-
-(fn &optional ARG)Vedebug-all-defs
+(fn)Vedebug-all-defs
 If non-nil, evaluating defining forms instruments for Edebug.
 This applies to `eval-defun', `eval-region', `eval-buffer', and
 `eval-current-buffer'.  `eval-region' is also called by
@@ -31728,35 +31712,6 @@ the buffer by the respective amount of lines instead and point
 will be kept vertically fixed relative to window boundaries
 during scrolling.
 
-(fn &optional ARG)Vsemantic-default-submodes
-List of auxiliary Semantic minor modes enabled by `semantic-mode'.
-The possible elements of this list include the following:
-
- `global-semanticdb-minor-mode'        - Maintain tag database.
- `global-semantic-idle-scheduler-mode' - Reparse buffer when idle.
- `global-semantic-idle-summary-mode'   - Show summary of tag at point.
- `global-semantic-idle-completions-mode' - Show completions when idle.
- `global-semantic-decoration-mode'     - Additional tag decorations.
- `global-semantic-highlight-func-mode' - Highlight the current tag.
- `global-semantic-stickyfunc-mode'     - Show current fun in header line.
- `global-semantic-mru-bookmark-mode'   - Provide `switch-to-buffer'-like
-                                         keybinding for tag names.Vsemantic-mode
-Non-nil if Semantic mode is enabled.
-See the command `semantic-mode' for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `semantic-mode'.Fsemantic-mode
-Toggle Semantic mode.
-With ARG, turn Semantic mode on if ARG is positive, off otherwise.
-
-In Semantic mode, Emacs parses the buffers you visit for their
-semantic content.  This information is used by a variety of
-auxiliary minor modes, listed in `semantic-default-submodes';
-all the minor modes in this list are also enabled when you enable
-Semantic mode.
-
-\{semantic-mode-map}
-
 (fn &optional ARG)Vmail-from-style
 Specifies how "From:" fields look.
 
@@ -33085,9 +33040,6 @@ The buffer is put in SQL interactive mode, giving commands for sending
 input.  See `sql-interactive-mode'.
 
 (Type \[describe-mode] in the SQL buffer for a list of commands.)
-
-(fn)Fsrecode-template-mode
-Major-mode for writing SRecode macros.
 
 (fn)Fstrokes-global-set-stroke
 Interactively give STROKE the global binding as COMMAND.

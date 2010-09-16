@@ -60,9 +60,7 @@ LOADDEFS = $(lisp)/calendar/cal-loaddefs.el \
 
 AUTOGENEL = $(lisp)/loaddefs.el $(LOADDEFS) $(lisp)/cus-load.el \
 	$(lisp)/finder-inf.el $(lisp)/subdirs.el $(lisp)/eshell/esh-groups.el \
-	$(lisp)/calc/calc-loaddefs.el $(lisp)/nxml/subdirs.el \
-	$(lisp)/cedet/semantic/loaddefs.el $(lisp)/cedet/ede/loaddefs.el \
-	$(lisp)/cedet/srecode/loaddefs.el
+	$(lisp)/calc/calc-loaddefs.el $(lisp)/nxml/subdirs.el
 
 # Files to compile before others during a bootstrap.  This is done to
 # speed up the bootstrap process.  The CC files are compiled first
@@ -85,17 +83,6 @@ COMPILE_FIRST = \
 emacs = "$(EMACS)" $(EMACSOPT)
 
 # Have to define the list of subdirs manually when not using sh.
-WINS_CEDET=\
-	cedet \
-	cedet/ede \
-	cedet/semantic \
-	cedet/srecode \
-	cedet/semantic/analyze \
-	cedet/semantic/bovine \
-	cedet/semantic/decorate \
-	cedet/semantic/symref \
-	cedet/semantic/wisent
-
 WINS_BASIC=\
 	calc \
 	calendar \
@@ -118,8 +105,7 @@ WINS_BASIC=\
 
 # Directories with lisp files to compile, and to extract data from
 # (customs, autoloads, etc.)
-WINS_UPDATES=$(WINS_BASIC) \
-	$(WINS_CEDET)
+WINS_UPDATES=$(WINS_BASIC)
 
 # Directories to add to subdirs.el
 WINS_SUBDIR=$(WINS_BASIC) \
@@ -222,7 +208,7 @@ update-subdirs-CMD: doit
 	echo ;; In load-path, after this directory should come>> $(lisp)/subdirs.el
 	echo ;; certain of its subdirectories.  Here we specify them.>> $(lisp)/subdirs.el
 	echo (normal-top-level-add-to-load-path $(SQUOTE)(>> $(lisp)/subdirs.el
-	@for %%d in ($(WINS_SUBDIR) cedet) do echo "%%d">> $(lisp)/subdirs.el
+	@for %%d in ($(WINS_SUBDIR)) do echo "%%d">> $(lisp)/subdirs.el
 	echo ))>> $(lisp)/subdirs.el
 
 update-subdirs-SH: doit

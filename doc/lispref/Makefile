@@ -21,10 +21,10 @@
 
 
 # Standard configure variables.
-srcdir = /home/ubuntu/install_emacs/emacs-23.2/doc/lispref
+srcdir = /home/debian/local/github/emacs/doc/lispref
 
 # Tell make where to find source files; this is needed for the makefiles.
-VPATH=/home/ubuntu/install_emacs/emacs-23.2/doc/lispref
+VPATH=/home/debian/local/github/emacs/doc/lispref
 
 infodir = ../../info
 # Directory with the (customized) texinfo.tex file.

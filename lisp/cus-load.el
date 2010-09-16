@@ -405,7 +405,6 @@
 (put 'gnus-edit-form 'custom-loads '(gnus-eform))
 (put 'org-keywords 'custom-loads '(org))
 (put 'gnus-audio 'custom-loads '(gnus-audio))
-(put 'cedet 'custom-loads '(cedet-cscope cedet-global cedet-idutils))
 (put 'modula2 'custom-loads '(modula2))
 (put 'nxml 'custom-loads '(nxml-mode nxml-outln rng-valid))
 (put 'newsticker-plainview 'custom-loads '(newst-plainview))

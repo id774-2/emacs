@@ -19,10 +19,10 @@
 # along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
 
 
-SHELL = /bin/bash
+SHELL = /bin/sh
 
-srcdir = /home/ubuntu/install_emacs/emacs-23.2/doc/lispintro
-VPATH = /home/ubuntu/install_emacs/emacs-23.2/doc/lispintro
+srcdir = /home/debian/local/github/emacs/doc/lispintro
+VPATH = /home/debian/local/github/emacs/doc/lispintro
 
 infodir = ../../info
 # Directory with the (customized) texinfo.tex file.

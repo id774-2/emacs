@@ -43,8 +43,8 @@
 
 ### Code:
 
-srcdir=/home/ubuntu/install_emacs/emacs-23.2/oldXMenu
-VPATH=/home/ubuntu/install_emacs/emacs-23.2/oldXMenu
+srcdir=/home/debian/local/github/emacs/oldXMenu
+VPATH=/home/debian/local/github/emacs/oldXMenu
 C_SWITCH_X_SITE=
 
 EXTRA=insque.o

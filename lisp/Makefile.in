@@ -61,10 +61,7 @@ AUTOGENEL = loaddefs.el \
 	finder-inf.el \
 	subdirs.el \
 	calc/calc-loaddefs.el \
-	eshell/esh-groups.el \
-	cedet/semantic/loaddefs.el \
-	cedet/ede/loaddefs.el \
-	cedet/srecode/loaddefs.el
+	eshell/esh-groups.el
 
 # Files to compile before others during a bootstrap.  This is done to
 # speed up the bootstrap process.
@@ -100,7 +97,7 @@ setwins_almost=subdirs=`(cd $$wd; find . -type d -print)`; \
 
 setwins_for_subdirs=subdirs=`(cd $$wd; find . -type d -print)`; \
 	for file in $$subdirs; do \
-	   case $$file in */Old | */RCS | */CVS | */CVS/* | */.* | */.*/* | */=* | */cedet* ) ;; \
+	   case $$file in */Old | */RCS | */CVS | */CVS/* | */.* | */.*/* | */=* ) ;; \
 		*) wins="$$wins $$wd/$$file" ;; \
 	   esac; \
         done
@@ -304,150 +301,6 @@ ELCFILES = \
 	$(lisp)/calendar/todo-mode.elc \
 	$(lisp)/case-table.elc \
 	$(lisp)/cdl.elc \
-	$(lisp)/cedet/cedet-cscope.elc \
-	$(lisp)/cedet/cedet-files.elc \
-	$(lisp)/cedet/cedet-global.elc \
-	$(lisp)/cedet/cedet-idutils.elc \
-	$(lisp)/cedet/cedet.elc \
-	$(lisp)/cedet/data-debug.elc \
-	$(lisp)/cedet/ede.elc \
-	$(lisp)/cedet/ede/autoconf-edit.elc \
-	$(lisp)/cedet/ede/cpp-root.elc \
-	$(lisp)/cedet/ede/dired.elc \
-	$(lisp)/cedet/ede/emacs.elc \
-	$(lisp)/cedet/ede/files.elc \
-	$(lisp)/cedet/ede/linux.elc \
-	$(lisp)/cedet/ede/locate.elc \
-	$(lisp)/cedet/ede/make.elc \
-	$(lisp)/cedet/ede/makefile-edit.elc \
-	$(lisp)/cedet/ede/pconf.elc \
-	$(lisp)/cedet/ede/pmake.elc \
-	$(lisp)/cedet/ede/proj-archive.elc \
-	$(lisp)/cedet/ede/proj-aux.elc \
-	$(lisp)/cedet/ede/proj-comp.elc \
-	$(lisp)/cedet/ede/proj-elisp.elc \
-	$(lisp)/cedet/ede/proj-info.elc \
-	$(lisp)/cedet/ede/proj-misc.elc \
-	$(lisp)/cedet/ede/proj-obj.elc \
-	$(lisp)/cedet/ede/proj-prog.elc \
-	$(lisp)/cedet/ede/proj-scheme.elc \
-	$(lisp)/cedet/ede/proj-shared.elc \
-	$(lisp)/cedet/ede/proj.elc \
-	$(lisp)/cedet/ede/project-am.elc \
-	$(lisp)/cedet/ede/shell.elc \
-	$(lisp)/cedet/ede/simple.elc \
-	$(lisp)/cedet/ede/source.elc \
-	$(lisp)/cedet/ede/speedbar.elc \
-	$(lisp)/cedet/ede/srecode.elc \
-	$(lisp)/cedet/ede/system.elc \
-	$(lisp)/cedet/ede/util.elc \
-	$(lisp)/cedet/inversion.elc \
-	$(lisp)/cedet/mode-local.elc \
-	$(lisp)/cedet/pulse.elc \
-	$(lisp)/cedet/semantic.elc \
-	$(lisp)/cedet/semantic/analyze.elc \
-	$(lisp)/cedet/semantic/analyze/complete.elc \
-	$(lisp)/cedet/semantic/analyze/debug.elc \
-	$(lisp)/cedet/semantic/analyze/fcn.elc \
-	$(lisp)/cedet/semantic/analyze/refs.elc \
-	$(lisp)/cedet/semantic/bovine.elc \
-	$(lisp)/cedet/semantic/bovine/c-by.elc \
-	$(lisp)/cedet/semantic/bovine/c.elc \
-	$(lisp)/cedet/semantic/bovine/debug.elc \
-	$(lisp)/cedet/semantic/bovine/el.elc \
-	$(lisp)/cedet/semantic/bovine/gcc.elc \
-	$(lisp)/cedet/semantic/bovine/make-by.elc \
-	$(lisp)/cedet/semantic/bovine/make.elc \
-	$(lisp)/cedet/semantic/bovine/scm-by.elc \
-	$(lisp)/cedet/semantic/bovine/scm.elc \
-	$(lisp)/cedet/semantic/chart.elc \
-	$(lisp)/cedet/semantic/complete.elc \
-	$(lisp)/cedet/semantic/ctxt.elc \
-	$(lisp)/cedet/semantic/db-debug.elc \
-	$(lisp)/cedet/semantic/db-ebrowse.elc \
-	$(lisp)/cedet/semantic/db-el.elc \
-	$(lisp)/cedet/semantic/db-file.elc \
-	$(lisp)/cedet/semantic/db-find.elc \
-	$(lisp)/cedet/semantic/db-global.elc \
-	$(lisp)/cedet/semantic/db-javascript.elc \
-	$(lisp)/cedet/semantic/db-mode.elc \
-	$(lisp)/cedet/semantic/db-ref.elc \
-	$(lisp)/cedet/semantic/db-typecache.elc \
-	$(lisp)/cedet/semantic/db.elc \
-	$(lisp)/cedet/semantic/debug.elc \
-	$(lisp)/cedet/semantic/decorate.elc \
-	$(lisp)/cedet/semantic/decorate/include.elc \
-	$(lisp)/cedet/semantic/decorate/mode.elc \
-	$(lisp)/cedet/semantic/dep.elc \
-	$(lisp)/cedet/semantic/doc.elc \
-	$(lisp)/cedet/semantic/ede-grammar.elc \
-	$(lisp)/cedet/semantic/edit.elc \
-	$(lisp)/cedet/semantic/find.elc \
-	$(lisp)/cedet/semantic/format.elc \
-	$(lisp)/cedet/semantic/fw.elc \
-	$(lisp)/cedet/semantic/grammar-wy.elc \
-	$(lisp)/cedet/semantic/grammar.elc \
-	$(lisp)/cedet/semantic/html.elc \
-	$(lisp)/cedet/semantic/ia-sb.elc \
-	$(lisp)/cedet/semantic/ia.elc \
-	$(lisp)/cedet/semantic/idle.elc \
-	$(lisp)/cedet/semantic/imenu.elc \
-	$(lisp)/cedet/semantic/java.elc \
-	$(lisp)/cedet/semantic/lex-spp.elc \
-	$(lisp)/cedet/semantic/lex.elc \
-	$(lisp)/cedet/semantic/mru-bookmark.elc \
-	$(lisp)/cedet/semantic/sb.elc \
-	$(lisp)/cedet/semantic/scope.elc \
-	$(lisp)/cedet/semantic/senator.elc \
-	$(lisp)/cedet/semantic/sort.elc \
-	$(lisp)/cedet/semantic/symref.elc \
-	$(lisp)/cedet/semantic/symref/cscope.elc \
-	$(lisp)/cedet/semantic/symref/filter.elc \
-	$(lisp)/cedet/semantic/symref/global.elc \
-	$(lisp)/cedet/semantic/symref/grep.elc \
-	$(lisp)/cedet/semantic/symref/idutils.elc \
-	$(lisp)/cedet/semantic/symref/list.elc \
-	$(lisp)/cedet/semantic/tag-file.elc \
-	$(lisp)/cedet/semantic/tag-ls.elc \
-	$(lisp)/cedet/semantic/tag-write.elc \
-	$(lisp)/cedet/semantic/tag.elc \
-	$(lisp)/cedet/semantic/texi.elc \
-	$(lisp)/cedet/semantic/util-modes.elc \
-	$(lisp)/cedet/semantic/util.elc \
-	$(lisp)/cedet/semantic/wisent.elc \
-	$(lisp)/cedet/semantic/wisent/comp.elc \
-	$(lisp)/cedet/semantic/wisent/java-tags.elc \
-	$(lisp)/cedet/semantic/wisent/javascript.elc \
-	$(lisp)/cedet/semantic/wisent/javat-wy.elc \
-	$(lisp)/cedet/semantic/wisent/js-wy.elc \
-	$(lisp)/cedet/semantic/wisent/python-wy.elc \
-	$(lisp)/cedet/semantic/wisent/python.elc \
-	$(lisp)/cedet/semantic/wisent/wisent.elc \
-	$(lisp)/cedet/srecode.elc \
-	$(lisp)/cedet/srecode/args.elc \
-	$(lisp)/cedet/srecode/compile.elc \
-	$(lisp)/cedet/srecode/cpp.elc \
-	$(lisp)/cedet/srecode/ctxt.elc \
-	$(lisp)/cedet/srecode/dictionary.elc \
-	$(lisp)/cedet/srecode/document.elc \
-	$(lisp)/cedet/srecode/el.elc \
-	$(lisp)/cedet/srecode/expandproto.elc \
-	$(lisp)/cedet/srecode/extract.elc \
-	$(lisp)/cedet/srecode/fields.elc \
-	$(lisp)/cedet/srecode/filters.elc \
-	$(lisp)/cedet/srecode/find.elc \
-	$(lisp)/cedet/srecode/getset.elc \
-	$(lisp)/cedet/srecode/insert.elc \
-	$(lisp)/cedet/srecode/java.elc \
-	$(lisp)/cedet/srecode/map.elc \
-	$(lisp)/cedet/srecode/mode.elc \
-	$(lisp)/cedet/srecode/semantic.elc \
-	$(lisp)/cedet/srecode/srt-mode.elc \
-	$(lisp)/cedet/srecode/srt-wy.elc \
-	$(lisp)/cedet/srecode/srt.elc \
-	$(lisp)/cedet/srecode/table.elc \
-	$(lisp)/cedet/srecode/template.elc \
-	$(lisp)/cedet/srecode/texi.elc \
 	$(lisp)/chistory.elc \
 	$(lisp)/cmuscheme.elc \
 	$(lisp)/comint.elc \

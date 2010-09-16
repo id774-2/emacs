@@ -22,11 +22,11 @@
 # Where to find the source code.  $(srcdir) will be the man-aux
 # subdirectory of the source tree.  This is
 # set by the configure script's `--srcdir' option.
-srcdir=/home/ubuntu/install_emacs/emacs-23.2/doc/misc
-top_srcdir=/home/ubuntu/install_emacs/emacs-23.2
+srcdir=/home/debian/local/github/emacs/doc/misc
+top_srcdir=/home/debian/local/github/emacs
 
 # Tell make where to find source files; this is needed for the makefiles.
-VPATH=/home/ubuntu/install_emacs/emacs-23.2/doc/misc
+VPATH=/home/debian/local/github/emacs/doc/misc
 
 ## Where the output files go.
 ## Note that the setfilename command in the .texi files assumes this.

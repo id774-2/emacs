@@ -158,13 +158,13 @@ bitmapdir=
 # set by the configure script's `--srcdir' option.
 
 # We use $(srcdir) explicitly in dependencies so as not to depend on VPATH.
-srcdir=/home/ubuntu/install_emacs/emacs-23.2
+srcdir=/home/debian/local/github/emacs
 
 # Where the manpage source files are kept.
 mansrcdir=$(srcdir)/doc/man
 
 # Tell make where to find source files; this is needed for the makefiles.
-VPATH=/home/ubuntu/install_emacs/emacs-23.2
+VPATH=/home/debian/local/github/emacs
 
 # Where to find the application default.
 x_default_search_path=

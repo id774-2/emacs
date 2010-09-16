@@ -33,8 +33,8 @@
 
 # Here are the things that we expect ../configure to edit.
 # We use $(srcdir) explicitly in dependencies so as not to depend on VPATH.
-srcdir=/home/ubuntu/install_emacs/emacs-23.2/src
-VPATH=/home/ubuntu/install_emacs/emacs-23.2/src
+srcdir=/home/debian/local/github/emacs/src
+VPATH=/home/debian/local/github/emacs/src
 CC=gcc
 CPP=gcc -E
 CFLAGS=-g -O2 -Wdeclaration-after-statement -Wno-pointer-sign  

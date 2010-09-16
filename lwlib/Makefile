@@ -23,8 +23,8 @@
 # This was taken from the output of Imake using Lucid's Imakefile.
 # and set up to be configured by ../configure.
 
-srcdir=/home/ubuntu/install_emacs/emacs-23.2/lwlib
-VPATH=/home/ubuntu/install_emacs/emacs-23.2/lwlib
+srcdir=/home/debian/local/github/emacs/lwlib
+VPATH=/home/debian/local/github/emacs/lwlib
 C_SWITCH_X_SITE=
 
 CC=gcc

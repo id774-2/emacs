@@ -3348,21 +3348,6 @@
     ("url.el"
         "Uniform Resource Locator retrieval tool"
         (comm data processes hypermedia))
-    ("cedet-cscope.el"
-        "CScope support for CEDET"
-        nil)
-    ("cedet-files.el"
-        "Common routines dealing with file names."
-        nil)
-    ("cedet-global.el"
-        "GNU Global support for CEDET."
-        nil)
-    ("cedet-idutils.el"
-        "ID Utils support for CEDET."
-        (oo lisp))
-    ("cedet.el"
-        "Setup CEDET environment"
-        (oo lisp))
     ("data-debug.el"
         "Datastructure Debugger"
         (oo lisp))

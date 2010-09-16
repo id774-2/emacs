@@ -70,11 +70,11 @@ localstatedir=${prefix}/var
 # since the variable here has `/lib-src' added at the end.
 
 # We use $(srcdir) explicitly in dependencies so as not to depend on VPATH.
-srcdir=/home/ubuntu/install_emacs/emacs-23.2/lib-src
-VPATH=/home/ubuntu/install_emacs/emacs-23.2/lib-src
+srcdir=/home/debian/local/github/emacs/lib-src
+VPATH=/home/debian/local/github/emacs/lib-src
 
 # The top-level source directory, also set by configure.
-top_srcdir=/home/ubuntu/install_emacs/emacs-23.2
+top_srcdir=/home/debian/local/github/emacs
 
 # ==================== Emacs-specific directories ====================
 
